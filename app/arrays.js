@@ -4,6 +4,25 @@ exports.arraysAnswers = {
 
   indexOf : function(arr, item) {
 
+    // arr = [a,b,c,d,e]
+    // item = b
+    // result = 1
+
+    // arr = [a,b,c,d,e]
+    // item = d
+    // result = 3
+
+    // arr = [a,b,c,d,e]
+    // item = y or z or f
+    // result = -1
+
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === item) {
+        return i;
+      }
+    }
+
+    return -1;
   },
 
   sum : function(arr) {
